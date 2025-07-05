@@ -82,7 +82,8 @@ const HomePage = () => {
   };
 
   useEffect(() => {
-    socket.current = io("ws://localhost:5000");
+    // socket.current = io("ws://localhost:5000");
+    socket.current = io("https://telegram-clone-socket-tmpq.onrender.com");
   }, []);
 
   useEffect(() => {
