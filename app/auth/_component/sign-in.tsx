@@ -1,3 +1,4 @@
+// app/auth/sign-in.tsx
 "use client";
 
 import { Button } from "@/components/ui/button";
@@ -44,10 +45,10 @@ const SignIn = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ type: "spring", stiffness: 100, damping: 20 }}
-      className="w-full max-w-md mx-auto p-6 bg-gray-900/80 backdrop-blur-lg rounded-xl shadow-xl"
+      className="w-full max-w-[95vw] sm:max-w-md mx-auto p-4 sm:p-6 bg-gray-900/80 backdrop-blur-lg rounded-xl shadow-xl"
     >
       <p className="text-center text-gray-400 text-sm mb-6 font-spaceGrotesk">
-        Telegram is a messaging app with a focus on speed and security, it’s super-fast, simple, and free.
+        Telegram is a messaging app with a focus on speed and security, it's super-fast, simple, and free.
       </p>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
@@ -62,7 +63,7 @@ const SignIn = () => {
                     <Input
                       placeholder="info@sammi.ac"
                       disabled={isPending}
-                      className="h-12 bg-gray-800/50 text-white border-gray-700/50 focus:ring-2 focus:ring-purple-500 placeholder-gray-400 rounded-lg"
+                      className="h-12 bg-gray-800/50 text-white border-gray-700/50 focus:ring-2 focus:ring-purple-500 placeholder-gray-400 rounded-lg w-full"
                       {...field}
                     />
                   </motion.div>
